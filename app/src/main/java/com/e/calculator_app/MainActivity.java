@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                 EditText myValue =(EditText)findViewById(R.id.et_values_id);
                 TextView myScreen =(TextView) findViewById(R.id.tv_display_id);
 
-                myValue.setText(myValue.getText().toString() + "5");
+                myValue.setText(myValue.getText().toString() + "4");
 
 
 
@@ -144,7 +144,94 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        Button seven =(Button) findViewById(R.id.bt_seven_id);
+        seven.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                EditText myValue =(EditText)findViewById(R.id.et_values_id);
+                TextView myScreen =(TextView) findViewById(R.id.tv_display_id);
+
+                myValue.setText(myValue.getText().toString() + "7");
+
+
+
+
+
+            }
+        });
+
+
+        Button eight =(Button) findViewById(R.id.bt_eight_id);
+        eight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EditText myValue =(EditText)findViewById(R.id.et_values_id);
+                TextView myScreen =(TextView) findViewById(R.id.tv_display_id);
+
+                myValue.setText(myValue.getText().toString() + "8");
+
+
+
+
+
+            }
+        });
+
+
+        Button nine =(Button) findViewById(R.id.bt_nine_id);
+        nine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EditText myValue =(EditText)findViewById(R.id.et_values_id);
+                TextView myScreen =(TextView) findViewById(R.id.tv_display_id);
+
+                myValue.setText(myValue.getText().toString() + "9");
+
+
+
+
+
+            }
+        });
+
+
+        Button zero =(Button) findViewById(R.id.bt_zero_id);
+        zero.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EditText myValue =(EditText)findViewById(R.id.et_values_id);
+                TextView myScreen =(TextView) findViewById(R.id.tv_display_id);
+
+                myValue.setText(myValue.getText().toString() + "0");
+
+
+
+
+
+            }
+        });
+
+
+        Button point =(Button) findViewById(R.id.bt_point_id);
+        point.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EditText myValue =(EditText)findViewById(R.id.et_values_id);
+                TextView myScreen =(TextView) findViewById(R.id.tv_display_id);
+
+                myValue.setText(myValue.getText().toString() + ".");
+
+
+
+
+
+            }
+        });
 
 
 
