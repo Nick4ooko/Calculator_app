@@ -8,28 +8,41 @@
     android:orientation="horizontal">
 
     <RelativeLayout
+        android:id="@+id/rl_et_tv_id"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:id="@+id/rl_et_tv_id">
+        android:layout_height="200dp">
 
         <EditText
+            android:id="@+id/et_values_id"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:id="@+id/et_values_id" />
+            android:layout_height="100dp"
+            android:textAlignment="textEnd"
+            android:textSize="40dp"
+            android:background="#FFFFFF"/>
 
         <TextView
+            android:id="@+id/tv_display_id"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:id="@+id/tv_display_id"/>
+            android:layout_marginTop="100dp"
+            android:textAlignment="textEnd"
+            android:textSize="40dp"
+            android:textStyle="italic"
+            android:background="#FFFFFF"/>
 
     </RelativeLayout>
+
+
+
+
 
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/rl_buttons_id"
-            android:layout_below="@id/rl_et_tv_id">
+            android:layout_below="@id/rl_et_tv_id"
+            android:background="#8A4B08">
 
 
             <LinearLayout
@@ -66,15 +79,17 @@
                     android:textSize="20dp"
                     android:textStyle="bold"/>
 
+
+
                 <Button
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/bt_cancel_id"
-                    android:text="C"
+                    android:id="@+id/bt_delete_id"
+                    android:text="Del"
+                    android:layout_marginTop="5dp"
                     android:layout_marginStart="5dp"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
-
 
 
 
@@ -83,19 +98,20 @@
 
 
 
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:orientation="horizontal"
                 android:id="@+id/ll_buttons_line2"
                 android:layout_below="@id/ll_buttons_line1_id">
 
                 <Button
                     android:layout_width="70dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:id="@+id/bt_four_id"
                     android:text="4"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginStart="5dp"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
@@ -105,7 +121,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/bt_five_id"
                     android:text="5"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginStart="5dp"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
@@ -115,28 +131,32 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/bt_six_id"
                     android:text="6"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="5dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
-                <Button
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/bt_percentage_id"
-                    android:text="%"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginStart="5dp"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
 
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bt_division_id"
+                    android:text="/"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
 
 
             </LinearLayout>
 
 
+
+
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:orientation="horizontal"
                 android:id="@+id/ll_buttons_line3"
                 android:layout_below="@id/ll_buttons_line2">
@@ -147,17 +167,17 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/bt_seven_id"
                     android:text="7"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginStart="5dp"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
 
                 <Button
                     android:layout_width="70dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:id="@+id/bt_eight_id"
                     android:text="8"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginStart="5dp"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
@@ -167,84 +187,10 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/bt_nine_id"
                     android:text="9"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginStart="5dp"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
-
-
-
-                <Button
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/bt_delete_id"
-                    android:text="Del"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="5dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:id="@+id/ll_buttons_line4_id"
-                android:layout_below="@id/ll_buttons_line3">
-
-                <Button
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/bt_point_id"
-                    android:text="."
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="5dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
-
-                <Button
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/bt_zero_id"
-                    android:text="0"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="5dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
-
-                <Button
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/bt_equal_id"
-                    android:text="="
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="5dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
-
-                <Button
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/bt_division_id"
-                    android:text="/"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginStart="5dp"
-                    android:textSize="20dp"
-                    android:textStyle="bold"/>
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:id="@+id/ll_buttons_line5"
-                android:layout_below="@id/ll_buttons_line4_id">
 
 
                 <Button
@@ -257,6 +203,41 @@
                     android:textStyle="bold"/>
 
 
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:id="@+id/ll_buttons_line4_id"
+                android:layout_below="@id/ll_buttons_line3">
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bt_point_id"
+                    android:text="."
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bt_zero_id"
+                    android:text="0"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+
+
                 <Button
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
@@ -265,6 +246,7 @@
                     android:layout_marginStart="5dp"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
+
 
                 <Button
                     android:layout_width="70dp"
@@ -277,6 +259,35 @@
 
 
             </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:id="@+id/ll_buttons_line5"
+                android:layout_below="@id/ll_buttons_line4_id">
+
+
+
+
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bt_equal_id"
+                    android:text="="
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+
 
         </RelativeLayout>
 

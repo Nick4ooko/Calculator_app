@@ -28,9 +28,15 @@ public class MainActivity extends AppCompatActivity {
     private Button   division;
     private Button   add;
     private Button   subtraction;
-    private Button   cancel;
     private Button   delete;
-    private Button   percentage;
+
+    float value1,value2;
+    boolean nDivision,nMultiplication,nAddition,nSubtraction;
+
+
+
+
+
 
 
     @Override
@@ -49,11 +55,10 @@ public class MainActivity extends AppCompatActivity {
                 myValue.setText(myValue.getText().toString() + "1");
 
 
-
-
-
             }
         });
+
+
 
         Button two =(Button) findViewById(R.id.bt_two_id);
         two.setOnClickListener(new View.OnClickListener() {
@@ -64,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
                 TextView myScreen =(TextView) findViewById(R.id.tv_display_id);
 
                 myValue.setText(myValue.getText().toString() + "2");
+
+
 
 
 
@@ -230,12 +237,114 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
             }
         });
 
 
 
 
+
+
+
+
+
+        Button add =(Button) findViewById(R.id.bt_add_id);
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EditText myValue =(EditText)findViewById(R.id.et_values_id);
+                TextView myScreen =(TextView) findViewById(R.id.tv_display_id);
+
+                myValue.setText(myValue.getText().toString() + "+");
+
+
+
+            }
+        });
+
+
+
+
+        Button subtraction =(Button) findViewById(R.id.bt_subtraction_id);
+        subtraction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EditText myValue =(EditText)findViewById(R.id.et_values_id);
+                TextView myScreen =(TextView) findViewById(R.id.tv_display_id);
+
+                myValue.setText(myValue.getText().toString() + "-");
+
+
+
+
+
+            }
+        });
+
+
+
+
+        Button multiplication =(Button) findViewById(R.id.bt_multiplication_id);
+        multiplication.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EditText myValue =(EditText)findViewById(R.id.et_values_id);
+                TextView myScreen =(TextView) findViewById(R.id.tv_display_id);
+
+                myValue.setText(myValue.getText().toString() + "*");
+
+
+
+
+
+            }
+        });
+
+
+
+
+
+        Button division =(Button) findViewById(R.id.bt_division_id);
+        division.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EditText myValue =(EditText)findViewById(R.id.et_values_id);
+                TextView myScreen =(TextView) findViewById(R.id.tv_display_id);
+
+                myValue.setText(myValue.getText().toString() + "/");
+
+
+
+
+
+
+
+
+            }
+        });
+
+
+
+        final Button delete =(Button) findViewById(R.id.bt_delete_id);
+
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EditText  myValue =(EditText) findViewById(R.id.et_values_id);
+                TextView myScreen =(TextView)findViewById(R.id.tv_display_id);
+
+                myValue.setText("");
+                myScreen.setText("");
+
+
+            }
+        });
 
 
 
