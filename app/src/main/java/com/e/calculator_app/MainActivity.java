@@ -249,7 +249,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        Button add =(Button) findViewById(R.id.bt_add_id);
+        final Button add =(Button) findViewById(R.id.bt_add_id);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -325,6 +325,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
             }
         });
 
@@ -346,6 +348,36 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
+
+      Button equal=(Button)findViewById(R.id.bt_equal_id);
+       equal.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               value2=Float.parseFloat(myValue.getText()+"");
+               if (nAddition==true);{
+                   myValue.setText(value1 + value2 +"");
+                   nAddition=false;
+
+               }
+
+               if (nSubtraction==true);{
+                   myValue.setText(value1 - value2+"");
+                   nSubtraction=false;
+
+               }
+               if(nDivision==true);{
+                   myValue.setText(value1/ value2+"");
+                   nDivision=false;
+
+               }
+               if(nMultiplication==true);{
+                   myValue.setText(value1 * value2+"");
+                   nMultiplication=false;
+               }
+           }
+       });
 
 
 
